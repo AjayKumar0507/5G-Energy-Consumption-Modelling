@@ -18,11 +18,9 @@ This ML challenge targets addressing the important questions mentioned above. In
 * **Objective C:** Achieve generalization capabilities across different base station configurations. The model must predict the energy consumption of newly configured parameters based on a small number of real network configuration parameters. For instance, if the training data contains samples collected from many base station products, when the transmit power is set to 30, 35, and 43 dBm, the model must estimate the energy consumed when the transmit power is set to 40 dBm.
 
 ## Metrics
-To focus on the cross-equipment and cross-configuration generalization capability of the model, the test set estimation accuracy is evaluated by using a weighted relative error evaluation method. Specifically, the error weight, w_i, of the sample corresponding to the new device and/or new configuration in the test set is larger and is provided in the test set.
+Mean Absolute Error calculates the average difference between the calculated values and actual values. It is also known as scale-dependent accuracy as it calculates error in observations taken on the same scale used to predict the accuracy of the machine learning model.
 
-The final model performance is ranked according to the **minimum WMAPE error**
-
-![](https://zindi-public-release.s3.eu-west-2.amazonaws.com/uploads/image_attachment/image/1944/584d2bb7-8d36-4a32-91b2-4ce603be6bbf.png)
+![](https://arize.com/wp-content/uploads/2024/04/mean-absolute-error-formula.png)
  
 ### Things to Learn
 ```text
